@@ -1,12 +1,11 @@
 {
-  "name": "cordova-plugin-template",
+  "name": "Android Storage Path",
   "version": "1.0.0",
   "cordova": {
-    "id": "cordova-plugin-template",
+    "id": "cordova-plugin-storagepath",
     "platforms": [
-      "android",
-      "ios",
+      "android"
     ]
   },
-  "description": "A starting point for a Cordova Plugin"
+  "description": "Cordova Android Storage Memory (like: ExternalStorage, InternalStorage) Path Plugin."
 }

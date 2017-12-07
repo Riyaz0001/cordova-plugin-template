@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="my-cordova-plugin"
+    id="cordova-plugin-storagepath"
     version="1.0.0">
-    <name>Cordova Plugin Template</name>
-    <description></description>
+    <name>Android Storage Path</name>
+    <description>Cordova Android Storage Memory (like: ExternalStorage, InternalStorage) Path for All Android.</description>
     <license>MIT</license>
-    <keywords></keywords>
-    <repo>https://github.com/driftyco/cordova-plugin-template.git</repo>
-    <issue>https://github.com/driftyco/cordova-plugin-template/issues</issue>
+    <keywords>Cordova,Ionic,ExternalStorage,InternalStorage,RemovableStorage, SDCard, MemoryCard, Path</keywords>
+    <repo>https://github.com/Riyaz0001/cordova-plugin-storagepath.git</repo>
+    <issue>https://github.com/Riyaz0001/cordova-plugin-storagepath/issues</issue>
 
-    <!-- android -->
-    <platform name="android">
-      <js-module src="www/plugin.js" name="plugin">
+    <js-module src="www/storagePath.js" name="storagePath">
         <runs/>
 
         <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="MyCordovaPlugin" />
+        <clobbers target="storagePath" />
       </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+      
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="MyCordovaPlugin">
-          <param name="android-package" value="com.example.MyCordovaPlugin" />
-          <param name="onload" value="true" />
+        <feature name="StoragePath">
+          <param name="android-package" value="com.mrustudio.plugin.storagePath" />
+<!--          <param name="onload" value="true" />-->
         </feature>
       </config-file>
 
-      <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
+      <source-file src="src/android/storagePath.java" target-dir="src/com/mrustudio/plugin/storagePath" />
     </platform>
 
     <!-- ios -->
+<!--
     <platform name="ios">
         <js-module src="www/plugin.js" name="plugin">
             <runs/>
@@ -43,4 +46,5 @@
         <header-file src="src/ios/MyCordovaPlugin.h" />
         <source-file src="src/ios/MyCordovaPlugin.m" />
     </platform>
+-->
 </plugin>
